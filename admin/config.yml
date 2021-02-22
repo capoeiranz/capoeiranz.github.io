@@ -6,14 +6,17 @@ backend:
 
 media_folder: media
 public_folder: /media
+publish_mode: editorial_workflow
+site_url: https://capoeira.org.nz
 
 collections:
   - name: 'page'
     label: 'Page'
     folder: ''
     create: true
-    slug: '{{title}}'
-    path: ''
+    extension: 'mdx'
+    format: 'frontmatter'
+    slug: "{{title}}"
     editor:
       preview: true
     fields:
