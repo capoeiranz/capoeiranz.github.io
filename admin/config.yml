@@ -12,11 +12,13 @@ site_url: https://capoeira.org.nz
 collections:
   - name: 'page'
     label: 'Page'
-    folder: ''
+    folder: 'page'
     create: true
     extension: 'mdx'
     format: 'frontmatter'
     slug: "{{title}}"
+    nested:
+      depth: 7 # max depth to show in the collection tree
     editor:
       preview: true
     fields:
