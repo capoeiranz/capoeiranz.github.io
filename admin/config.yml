@@ -2,7 +2,8 @@ backend:
   name: git-gateway
   repo: capoeiranz/capoeira.content
   branch: master
-  base_url: capoeiranz.netlify.app
+  base_url: https://api.netlify.com
+  site_domain: cms.netlify.com
 
 media_folder: media
 public_folder: /media
