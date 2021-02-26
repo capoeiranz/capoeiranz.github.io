@@ -7,7 +7,7 @@ backend:
 media_folder: media
 public_folder: /media
 publish_mode: editorial_workflow
-site_url: https://capoeira.4pi.nz
+site_url: https://capoeiranz.netlify.app
 
 collections:
   - label: "Pages"
