@@ -1,13 +1,13 @@
 backend:
   name: git-gateway
 #  repo: capoeiranz/capoeira.content
-  branch: master
-#  site_domain: capoeiranz.netlify.com
+#  branch: master
+#  site_domain: capoeira.4pi.nz
 
 media_folder: media
 public_folder: /media
 publish_mode: editorial_workflow
-site_url: https://capoeira.org.nz
+site_url: https://capoeira.4pi.nz
 
 collections:
   - label: "Pages"
