@@ -1,8 +1,8 @@
 backend:
   name: git-gateway
-#  repo: capoeiranz/capoeira.content
-#  branch: master
-#  site_domain: capoeira.4pi.nz
+  repo: capoeiranz/capoeira.content
+  branch: master
+  site_domain: capoeira.4pi.nz
 
 media_folder: media
 public_folder: /media
