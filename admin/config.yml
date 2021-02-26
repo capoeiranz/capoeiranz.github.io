@@ -1,8 +1,8 @@
 backend:
-  name: github
-  repo: capoeiranz/capoeira.content
+  name: git-gateway
+#  repo: capoeiranz/capoeira.content
   branch: master
-  site_domain: capoeiranz.netlify.com
+#  site_domain: capoeiranz.netlify.com
 
 media_folder: media
 public_folder: /media
@@ -10,18 +10,29 @@ publish_mode: editorial_workflow
 site_url: https://capoeira.org.nz
 
 collections:
-  - name: 'page'
-    label: 'Page'
-    folder: 'page'
+  - label: "Pages"
+    name: "page"
+    folder: "page"
     create: true
-    extension: 'mdx'
-    format: 'frontmatter'
+    extension: "mdx"
+    format: "frontmatter"
     slug: "{{title}}"
     nested:
       depth: 7 # max depth to show in the collection tree
     editor:
       preview: true
     fields:
-      - { label: 'Title', name: 'title', widget: 'string' }
-      - { label: 'Publish Date', name: 'date', widget: 'datetime' }
-      - { label: 'Body', name: 'body', widget: 'markdown' }
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Publish Date", name: "date", widget: "datetime" }
+      - { label: "Body", name: "body", widget: "markdown" }
+  - label: "Settings"
+    name: "settings"
+    files:
+      - label: "Grommet Theme"
+        name: "grommet-theme"
+        file: "settings/grommet-theme.json"
+        fields:
+          - label: "Code"
+            name: "code"
+            widget: "code"
+            output_code_only: true
