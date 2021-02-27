@@ -1,14 +1,10 @@
 backend:
   name: git-gateway
   branch: master
-  identity_url: "https://capoeiranz.netlify.app/.netlify/identity"
-  gateway_url: "https://capoeiranz.netlify.app/.netlify/git"
-  site_domain: "https://capoeiranz.netlify.app/"
 
 media_folder: media
 public_folder: /media
 publish_mode: editorial_workflow
-site_url: https://capoeir.4pi.nz
 
 collections:
   - label: "Pages"
